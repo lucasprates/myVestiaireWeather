@@ -33,11 +33,3 @@ extension String {
         }
     }
 }
-
-//Localization
-extension String {
-    
-    func localized(fromFile fileName:String) -> String {
-        return NSLocalizedString(self, tableName: fileName, bundle: Bundle.main, value: "", comment: "")
-    }
-}

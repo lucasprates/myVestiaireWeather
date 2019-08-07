@@ -34,10 +34,10 @@ class ForecastViewModel: NSObject {
     }
     
     //Data arrived from Model "downer" layer of OpenWeather's API
-    func newDataArrivedReturnBlock() ->  ((_ : [OWForecast]) -> Void)? {
-        return { (_ newForecasts: [OWForecast]) in
+    func newDataArrivedReturnBlock() ->  ((_ : [OWForecast]?) -> Void)? {
+        return { (_ newForecasts: [OWForecast]?) in
             //remove past forecasts
-            let newFutureForecasts = newForecasts.filter({ $0.date?.timeIntervalSince(Calendar.current.startOfDay(for: Date())) ?? 0 > 0 })
+            let newFutureForecasts = newForecasts?.filter({ $0.date?.timeIntervalSince(Calendar.current.startOfDay(for: Date())) ?? 0 > 0 }) ?? []
             
             //send the new forecast received to the Local CoreData Database
             CoreDataController.shared().newForecastsArrived(fromOpenWeatherForecast: newFutureForecasts)
@@ -94,7 +94,7 @@ extension ForecastCell {
             let dateFormatterConvert = DateFormatter()
             dateFormatterConvert.dateFormat = "dd/MM/yyyy"
             if let dateFilled = cellInfo.date {
-                self.date.text = dateFormatterConvert.string(from: dateFilled)
+                self.date.text = dateFormatterConvert.string(from: dateFilled as Date)
             }
         }
     }
@@ -115,7 +115,7 @@ extension ForecastDetailed {
             let dateFormatterConvert = DateFormatter()
             dateFormatterConvert.dateFormat = "dd/MM/yyyy"
             if let dateFilled = forecastUnit.date {
-                self.date.text = dateFormatterConvert.string(from: dateFilled)
+                self.date.text = dateFormatterConvert.string(from: dateFilled as Date)
             }
             
             if let iconNameFilled = forecastUnit.iconName {
@@ -158,7 +158,7 @@ extension OWForecast {
     
     func fillInfo(intoDbObject forecastDB: Forecast, withContext contextDB: NSManagedObjectContext, intoLocation dbLocation: Location?) {
         //fill forecastDB with all OWForecast compatible variables
-        forecastDB.date = self.date
+        forecastDB.date = self.date as NSDate?
         forecastDB.speed = self.speed ?? 0.0
         forecastDB.humidity = self.humidity ?? 0.0
         forecastDB.pressure = self.pressure ?? 0.0

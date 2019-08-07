@@ -20,6 +20,37 @@
 		A03F83A422F718CA00894B57 /* OWLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F83A322F718CA00894B57 /* OWLocation.swift */; };
 		A03F83A622F718D800894B57 /* OWTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F83A522F718D700894B57 /* OWTemperature.swift */; };
 		A03F83A922F71AEC00894B57 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F83A822F71AEC00894B57 /* CoreDataController.swift */; };
+		A079CF9122FAD5920091B3E4 /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F839B22F7141100894B57 /* OpenWeatherAPI.swift */; };
+		A079CF9222FAD5950091B3E4 /* OWForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F83A122F718B600894B57 /* OWForecast.swift */; };
+		A079CF9322FAD5960091B3E4 /* OWLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F83A322F718CA00894B57 /* OWLocation.swift */; };
+		A079CF9422FAD5980091B3E4 /* OWTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F83A522F718D700894B57 /* OWTemperature.swift */; };
+		A079CF9522FAD59A0091B3E4 /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DDB44522F710ED00FACC26 /* WebServiceHandler.swift */; };
+		A079CF9622FAD59C0091B3E4 /* WebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F839422F7127B00894B57 /* WebServiceRequest.swift */; };
+		A079CF9722FAD59E0091B3E4 /* WebServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F839622F7135300894B57 /* WebServiceResponse.swift */; };
+		A079CF9A22FAD6570091B3E4 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F839D22F7146E00894B57 /* DictionaryExtensions.swift */; };
+		A079CF9B22FAD65C0091B3E4 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F839822F713C100894B57 /* StringExtensions.swift */; };
+		A079CF9E22FAD8C50091B3E4 /* OpenWeatherAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CF9D22FAD8C50091B3E4 /* OpenWeatherAPITests.swift */; };
+		A079CF9F22FADFA60091B3E4 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EA3DF022F60E4D00CC1B68 /* ForecastViewModel.swift */; };
+		A079CFA022FADFB60091B3E4 /* MyVestiaireWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A08EFFAC22F6009F00F3B4E4 /* MyVestiaireWeather.xcdatamodeld */; };
+		A079CFA122FADFDF0091B3E4 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F83A822F71AEC00894B57 /* CoreDataController.swift */; };
+		A079CFA222FADFFC0091B3E4 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EA3DEE22F60DC900CC1B68 /* MainNavController.swift */; };
+		A079CFA322FADFFE0091B3E4 /* ForecastsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B2B87322F9A93000582EFE /* ForecastsTable.swift */; };
+		A079CFA422FAE0030091B3E4 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B2B87522F9A95300582EFE /* ForecastCell.swift */; };
+		A079CFA522FAE0050091B3E4 /* ForecastDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B2B87722F9A9B500582EFE /* ForecastDetailed.swift */; };
+		A079CFAC22FAE12A0091B3E4 /* Forecast+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFAA22FAE12A0091B3E4 /* Forecast+CoreDataClass.swift */; };
+		A079CFAD22FAE12A0091B3E4 /* Forecast+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFAA22FAE12A0091B3E4 /* Forecast+CoreDataClass.swift */; };
+		A079CFAE22FAE12A0091B3E4 /* Forecast+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFAB22FAE12A0091B3E4 /* Forecast+CoreDataProperties.swift */; };
+		A079CFAF22FAE12A0091B3E4 /* Forecast+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFAB22FAE12A0091B3E4 /* Forecast+CoreDataProperties.swift */; };
+		A079CFB022FAE12A0091B3E4 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFA922FAE12A0091B3E4 /* Location+CoreDataClass.swift */; };
+		A079CFB122FAE12A0091B3E4 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFA922FAE12A0091B3E4 /* Location+CoreDataClass.swift */; };
+		A079CFB222FAE12A0091B3E4 /* Temperature+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFA822FAE12A0091B3E4 /* Temperature+CoreDataProperties.swift */; };
+		A079CFB322FAE12A0091B3E4 /* Temperature+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFA822FAE12A0091B3E4 /* Temperature+CoreDataProperties.swift */; };
+		A079CFB422FAE12A0091B3E4 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFA722FAE12A0091B3E4 /* Location+CoreDataProperties.swift */; };
+		A079CFB522FAE12A0091B3E4 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFA722FAE12A0091B3E4 /* Location+CoreDataProperties.swift */; };
+		A079CFB622FAE12A0091B3E4 /* Temperature+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFA622FAE12A0091B3E4 /* Temperature+CoreDataClass.swift */; };
+		A079CFB722FAE12A0091B3E4 /* Temperature+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFA622FAE12A0091B3E4 /* Temperature+CoreDataClass.swift */; };
+		A079CFBA22FAE1D80091B3E4 /* ForecastViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A079CFB922FAE1D80091B3E4 /* ForecastViewModelTests.swift */; };
+		A079CFBB22FAE2DA0091B3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08EFFA522F6009F00F3B4E4 /* AppDelegate.swift */; };
 		A08EFFA622F6009F00F3B4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08EFFA522F6009F00F3B4E4 /* AppDelegate.swift */; };
 		A08EFFAB22F6009F00F3B4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A08EFFA922F6009F00F3B4E4 /* Main.storyboard */; };
 		A08EFFAE22F6009F00F3B4E4 /* MyVestiaireWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A08EFFAC22F6009F00F3B4E4 /* MyVestiaireWeather.xcdatamodeld */; };
@@ -59,6 +90,15 @@
 		A03F83A322F718CA00894B57 /* OWLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWLocation.swift; sourceTree = "<group>"; };
 		A03F83A522F718D700894B57 /* OWTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWTemperature.swift; sourceTree = "<group>"; };
 		A03F83A822F71AEC00894B57 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		A079CF9822FAD6380091B3E4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A079CF9D22FAD8C50091B3E4 /* OpenWeatherAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPITests.swift; sourceTree = "<group>"; };
+		A079CFA622FAE12A0091B3E4 /* Temperature+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Temperature+CoreDataClass.swift"; path = "/Users/lucas/Dev/iOS Apps/myVestiaireWeather/MyVestiaireWeather/MyVestiaireWeather/Model/Core Data Controller/Temperature+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A079CFA722FAE12A0091B3E4 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataProperties.swift"; path = "/Users/lucas/Dev/iOS Apps/myVestiaireWeather/MyVestiaireWeather/MyVestiaireWeather/Model/Core Data Controller/Location+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		A079CFA822FAE12A0091B3E4 /* Temperature+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Temperature+CoreDataProperties.swift"; path = "/Users/lucas/Dev/iOS Apps/myVestiaireWeather/MyVestiaireWeather/MyVestiaireWeather/Model/Core Data Controller/Temperature+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		A079CFA922FAE12A0091B3E4 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataClass.swift"; path = "/Users/lucas/Dev/iOS Apps/myVestiaireWeather/MyVestiaireWeather/MyVestiaireWeather/Model/Core Data Controller/Location+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A079CFAA22FAE12A0091B3E4 /* Forecast+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Forecast+CoreDataClass.swift"; path = "/Users/lucas/Dev/iOS Apps/myVestiaireWeather/MyVestiaireWeather/MyVestiaireWeather/Model/Core Data Controller/Forecast+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A079CFAB22FAE12A0091B3E4 /* Forecast+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Forecast+CoreDataProperties.swift"; path = "/Users/lucas/Dev/iOS Apps/myVestiaireWeather/MyVestiaireWeather/MyVestiaireWeather/Model/Core Data Controller/Forecast+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		A079CFB922FAE1D80091B3E4 /* ForecastViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModelTests.swift; sourceTree = "<group>"; };
 		A08EFFA222F6009F00F3B4E4 /* MyVestiaireWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyVestiaireWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08EFFA522F6009F00F3B4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A08EFFAA22F6009F00F3B4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +189,19 @@
 			path = "OpenWeather Objects";
 			sourceTree = "<group>";
 		};
+		A079CFB822FAE1340091B3E4 /* Core Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A079CFA622FAE12A0091B3E4 /* Temperature+CoreDataClass.swift */,
+				A079CFA822FAE12A0091B3E4 /* Temperature+CoreDataProperties.swift */,
+				A079CFA922FAE12A0091B3E4 /* Location+CoreDataClass.swift */,
+				A079CFA722FAE12A0091B3E4 /* Location+CoreDataProperties.swift */,
+				A079CFAA22FAE12A0091B3E4 /* Forecast+CoreDataClass.swift */,
+				A079CFAB22FAE12A0091B3E4 /* Forecast+CoreDataProperties.swift */,
+			);
+			path = "Core Data Objects";
+			sourceTree = "<group>";
+		};
 		A08EFF9922F6009F00F3B4E4 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +239,8 @@
 		A08EFFBC22F600A100F3B4E4 /* MyVestiaireWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
+				A079CFB922FAE1D80091B3E4 /* ForecastViewModelTests.swift */,
+				A079CF9D22FAD8C50091B3E4 /* OpenWeatherAPITests.swift */,
 				A08EFFBD22F600A100F3B4E4 /* MyVestiaireWeatherTests.swift */,
 				A08EFFBF22F600A100F3B4E4 /* Info.plist */,
 			);
@@ -245,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				A03F83A822F71AEC00894B57 /* CoreDataController.swift */,
+				A079CFB822FAE1340091B3E4 /* Core Data Objects */,
 			);
 			path = "Core Data Controller";
 			sourceTree = "<group>";
@@ -261,6 +317,7 @@
 		B814AE9EBC7B74F6EEC04AA2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A079CF9822FAD6380091B3E4 /* Alamofire.framework */,
 				BA82C427D933635348B5E394 /* Pods_MyVestiaireWeather.framework */,
 				EDF372896A6B3BD07CADE4A7 /* Pods_MyVestiaireWeatherTests.framework */,
 			);
@@ -444,10 +501,16 @@
 			files = (
 				A03F839922F713C100894B57 /* StringExtensions.swift in Sources */,
 				A03F839522F7127B00894B57 /* WebServiceRequest.swift in Sources */,
+				A079CFB422FAE12A0091B3E4 /* Location+CoreDataProperties.swift in Sources */,
+				A079CFAC22FAE12A0091B3E4 /* Forecast+CoreDataClass.swift in Sources */,
 				A03F83A422F718CA00894B57 /* OWLocation.swift in Sources */,
 				A03F839C22F7141100894B57 /* OpenWeatherAPI.swift in Sources */,
+				A079CFAE22FAE12A0091B3E4 /* Forecast+CoreDataProperties.swift in Sources */,
 				A0B2B87622F9A95300582EFE /* ForecastCell.swift in Sources */,
 				A0B2B87822F9A9B500582EFE /* ForecastDetailed.swift in Sources */,
+				A079CFB222FAE12A0091B3E4 /* Temperature+CoreDataProperties.swift in Sources */,
+				A079CFB022FAE12A0091B3E4 /* Location+CoreDataClass.swift in Sources */,
+				A079CFB622FAE12A0091B3E4 /* Temperature+CoreDataClass.swift in Sources */,
 				A0EA3DEF22F60DC900CC1B68 /* MainNavController.swift in Sources */,
 				A03F839722F7135300894B57 /* WebServiceResponse.swift in Sources */,
 				A0B2B87422F9A93000582EFE /* ForecastsTable.swift in Sources */,
@@ -466,7 +529,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A079CFB122FAE12A0091B3E4 /* Location+CoreDataClass.swift in Sources */,
+				A079CF9422FAD5980091B3E4 /* OWTemperature.swift in Sources */,
+				A079CFAD22FAE12A0091B3E4 /* Forecast+CoreDataClass.swift in Sources */,
+				A079CFA322FADFFE0091B3E4 /* ForecastsTable.swift in Sources */,
+				A079CFB722FAE12A0091B3E4 /* Temperature+CoreDataClass.swift in Sources */,
+				A079CFA022FADFB60091B3E4 /* MyVestiaireWeather.xcdatamodeld in Sources */,
+				A079CF9222FAD5950091B3E4 /* OWForecast.swift in Sources */,
+				A079CF9E22FAD8C50091B3E4 /* OpenWeatherAPITests.swift in Sources */,
+				A079CFBB22FAE2DA0091B3E4 /* AppDelegate.swift in Sources */,
+				A079CF9722FAD59E0091B3E4 /* WebServiceResponse.swift in Sources */,
+				A079CFB322FAE12A0091B3E4 /* Temperature+CoreDataProperties.swift in Sources */,
+				A079CF9622FAD59C0091B3E4 /* WebServiceRequest.swift in Sources */,
+				A079CFB522FAE12A0091B3E4 /* Location+CoreDataProperties.swift in Sources */,
+				A079CFBA22FAE1D80091B3E4 /* ForecastViewModelTests.swift in Sources */,
+				A079CF9322FAD5960091B3E4 /* OWLocation.swift in Sources */,
+				A079CF9A22FAD6570091B3E4 /* DictionaryExtensions.swift in Sources */,
+				A079CF9B22FAD65C0091B3E4 /* StringExtensions.swift in Sources */,
+				A079CF9522FAD59A0091B3E4 /* WebServiceHandler.swift in Sources */,
+				A079CFA222FADFFC0091B3E4 /* MainNavController.swift in Sources */,
+				A079CFA122FADFDF0091B3E4 /* CoreDataController.swift in Sources */,
+				A079CFAF22FAE12A0091B3E4 /* Forecast+CoreDataProperties.swift in Sources */,
+				A079CF9F22FADFA60091B3E4 /* ForecastViewModel.swift in Sources */,
+				A079CFA522FAE0050091B3E4 /* ForecastDetailed.swift in Sources */,
 				A08EFFBE22F600A100F3B4E4 /* MyVestiaireWeatherTests.swift in Sources */,
+				A079CF9122FAD5920091B3E4 /* OpenWeatherAPI.swift in Sources */,
+				A079CFA422FAE0030091B3E4 /* ForecastCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
